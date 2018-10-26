@@ -28,8 +28,8 @@
         <li><a href="#" class="menu-item">TV</a></li>
         <li><a href="#" class="menu-item">Music</a></li>
         <li><a href="#" class="menu-item">Support</a></li>
-        <li><a href="#" class="menu-item"><i class="fas fa-search"></i></a></li>
-        <li><a href="#" class="menu-item"><i class="fas fa-shopping-basket"></i></a></li>
+        <li><a href="#" id="search"><i class="fas fa-search"></i></a></li>
+        <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
       </ul>
     </div>
   </nav>
@@ -39,6 +39,15 @@
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
     crossorigin="anonymous"></script>
+
+  <!--Main animation script  -->
+  <script>
+    $(document).ready(function(){
+      $('#search').click(function(){
+        $('.menu-item').toggleClass('hide-item')
+      })
+    })
+  </script>
 </body>
 
 </html>
