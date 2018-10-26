@@ -61,3 +61,49 @@ nav{
   -ms-transform: scale(0);
   -o-transform: scale(0);
 }
+
+/* First past of animation */
+.menu ul li:nth-child(2) a.menu-item.hide-item{
+  transition-delay:  0.6s;
+}
+.menu ul li:nth-child(3) a.menu-item.hide-item{
+  transition-delay:  0.5s;
+}
+.menu ul li:nth-child(4) a.menu-item.hide-item{
+  transition-delay:  0.4s;
+}
+.menu ul li:nth-child(5) a.menu-item.hide-item{
+  transition-delay:  0.3s;
+}
+.menu ul li:nth-child(6) a.menu-item.hide-item{
+  transition-delay:  0.2s;
+}
+.menu ul li:nth-child(7) a.menu-item.hide-item{
+  transition-delay:  0.1s;
+}
+.menu ul li:nth-child(8) a.menu-item.hide-item{
+  transition-delay:  0s;
+}
+
+/* Animation back */
+.menu ul li:nth-child(2) a.menu-item{
+  transition-delay:  0s;
+}
+.menu ul li:nth-child(3) a.menu-item{
+  transition-delay:  0.1s;
+}
+.menu ul li:nth-child(4) a.menu-item{
+  transition-delay:  0.2s;
+}
+.menu ul li:nth-child(5) a.menu-item{
+  transition-delay:  0.3s;
+}
+.menu ul li:nth-child(6) a.menu-item{
+  transition-delay:  0.4s;
+}
+.menu ul li:nth-child(7) a.menu-item{
+  transition-delay:  0.5s;
+}
+.menu ul li:nth-child(8) a.menu-item{
+  transition-delay:  0.6s;
+}
