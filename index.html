@@ -32,7 +32,14 @@
         <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
       </ul>
     </div>
+    <div class="search-form">
+      <form action="">
+        <input type="text" name="" placeholder="Search apple.com">
+      </form>
+    </div>
+    <a class="close"><i class="fas fa-times"></i></a>
   </nav>
+  <div class="main"></div>
 
   <!-- Scripts -->
 
@@ -42,9 +49,16 @@
 
   <!--Main animation script  -->
   <script>
-    $(document).ready(function(){
-      $('#search').click(function(){
+    $(document).ready(function () {
+      $('#search').click(function () {
         $('.menu-item').toggleClass('hide-item')
+        $('.search-form').toggleClass('active')
+        $('.close').addClass('active')
+      })
+      $('.close').click(function () {
+        $('.menu-item').removeClass('hide-item')
+        $('.search-form').removeClass('active')
+        $('.close').removeClass('active')
       })
     })
   </script>
