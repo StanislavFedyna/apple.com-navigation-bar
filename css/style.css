@@ -1,204 +1,235 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-nav {
-  height: 44px;
-  background: #000;
+nav
+{
+    height: 44px;
+    background: #000;
 }
 
-.menu {
-  position: relative;
-  margin: 0 auto;
-  width: 1000px;
-  overflow: hidden;
+.menu
+{
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
 }
 
-.menu ul {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
+.menu ul
+{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
 }
 
-.menu ul li {
-  list-style: none;
+.menu ul li
+{
+    list-style: none;
 }
 
 .menu ul li,
-.menu ul li a {
-  color: #fff;
-  line-height: 44px;
-  text-decoration: none;
+.menu ul li a
+{
+    line-height: 44px;
+    text-decoration: none;
+    color: #fff;
 }
 
-.menu ul li .fab.fa-apple {
-  font-size: 20px;
+.menu ul li .fab.fa-apple
+{
+    font-size: 20px;
 }
 
-.menu ul li a.menu-item {
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  display: block;
+.menu ul li a.menu-item
+{
+    display: block;
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+        -ms-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
 }
 
-.menu ul li a.menu-item.hide-item {
-  transform: scale(0);
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
+.menu ul li a.menu-item.hide-item
+{
+    -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+        -ms-transform: scale(0);
+         -o-transform: scale(0);
+            transform: scale(0);
 }
 
 /* First past of animation */
-.menu ul li:nth-child(2) a.menu-item.hide-item {
-  transition-delay: 0.6s;
+.menu ul li:nth-child(2) a.menu-item.hide-item
+{
+    transition-delay: .6s;
 }
 
-.menu ul li:nth-child(3) a.menu-item.hide-item {
-  transition-delay: 0.5s;
+.menu ul li:nth-child(3) a.menu-item.hide-item
+{
+    transition-delay: .5s;
 }
 
-.menu ul li:nth-child(4) a.menu-item.hide-item {
-  transition-delay: 0.4s;
+.menu ul li:nth-child(4) a.menu-item.hide-item
+{
+    transition-delay: .4s;
 }
 
-.menu ul li:nth-child(5) a.menu-item.hide-item {
-  transition-delay: 0.3s;
+.menu ul li:nth-child(5) a.menu-item.hide-item
+{
+    transition-delay: .3s;
 }
 
-.menu ul li:nth-child(6) a.menu-item.hide-item {
-  transition-delay: 0.2s;
+.menu ul li:nth-child(6) a.menu-item.hide-item
+{
+    transition-delay: .2s;
 }
 
-.menu ul li:nth-child(7) a.menu-item.hide-item {
-  transition-delay: 0.1s;
+.menu ul li:nth-child(7) a.menu-item.hide-item
+{
+    transition-delay: .1s;
 }
 
-.menu ul li:nth-child(8) a.menu-item.hide-item {
-  transition-delay: 0s;
+.menu ul li:nth-child(8) a.menu-item.hide-item
+{
+    transition-delay: 0s;
 }
 
 /* Animation back */
-.menu ul li:nth-child(2) a.menu-item {
-  transition-delay: 0s;
+.menu ul li:nth-child(2) a.menu-item
+{
+    transition-delay: 0s;
 }
 
-.menu ul li:nth-child(3) a.menu-item {
-  transition-delay: 0.1s;
+.menu ul li:nth-child(3) a.menu-item
+{
+    transition-delay: .1s;
 }
 
-.menu ul li:nth-child(4) a.menu-item {
-  transition-delay: 0.2s;
+.menu ul li:nth-child(4) a.menu-item
+{
+    transition-delay: .2s;
 }
 
-.menu ul li:nth-child(5) a.menu-item {
-  transition-delay: 0.3s;
+.menu ul li:nth-child(5) a.menu-item
+{
+    transition-delay: .3s;
 }
 
-.menu ul li:nth-child(6) a.menu-item {
-  transition-delay: 0.4s;
+.menu ul li:nth-child(6) a.menu-item
+{
+    transition-delay: .4s;
 }
 
-.menu ul li:nth-child(7) a.menu-item {
-  transition-delay: 0.5s;
+.menu ul li:nth-child(7) a.menu-item
+{
+    transition-delay: .5s;
 }
 
-.menu ul li:nth-child(8) a.menu-item {
-  transition-delay: 0.6s;
+.menu ul li:nth-child(8) a.menu-item
+{
+    transition-delay: .6s;
 }
 
-.search-form {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  width: 600px;
-  height: 44px;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+.search-form
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    visibility: hidden;
+    width: 600px;
+    height: 44px;
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+    -webkit-transform: translateX(0);
+       -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+         -o-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0;
 }
 
-.search-form.active {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.5s;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
+.search-form.active
+{
+    visibility: visible;
+    transition-delay: .5s;
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 1;
 }
 
-.search-form input {
-  width: 100%;
-  height: 44px;
-  background: transparent;
-  color: #fff;
-  border: none;
-  outline: none;
-  font-size: 16px;
+.search-form input
+{
+    font-size: 16px;
+    width: 100%;
+    height: 44px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: transparent;
 }
 
-.search-form:before {
-  content: '🔍';
-  position: absolute;
-  top: 12px;
-  left: -26px;
-  font-size: 18px;
-  color: #fff;
-  font-family: serif;
+.search-form:before
+{
+    font-family: serif;
+    font-size: 18px;
+    position: absolute;
+    top: 12px;
+    left: -26px;
+    content: '🔍';
+    color: #fff;
 }
 
-.search-form input::placeholder {
-  color: #fff;
+.search-form input::placeholder
+{
+    color: #fff;
 }
 
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 44px;
-  background: #000;
-  color: #fff;
-  line-height: 44px;
-  font-size: 18px;
-  text-align: right;
-  width: 20px;
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
+.close
+{
+    font-size: 18px;
+    line-height: 44px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    width: 20px;
+    height: 44px;
+    cursor: pointer;
+    text-align: right;
+    opacity: 0;
+    color: #fff;
+    background: #000;
 }
 
-.close.active{
-  opacity: 0;
-  visibility: visible;
+.close.active
+{
+    visibility: visible;
+    opacity: 0;
 }
-.main{
- background: url(../img/apple.main.jpg);
- height: calc(100vh - 44px);
- background-repeat: no-repeat;
- background-size: cover;
+.main
+{
+    height: calc(100vh - 44px);
+    background: url(../img/apple.main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
